@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Baby's first form</title>
+</head>
+<body>
+	<form id='firstform' name="firstform" action="success.html" method='post'>
+		<fieldset>
+
+			<label>Any comments before we get started?</label>
+			<textarea form='firstform'></textarea>
+
+			<div>
+				<label>Make a choice or selection</label>
+					<select name='selection'>
+						<option value='first'> First Choice </option>
+						<option value='second'>Second Choice</option>
+						<option value='third'>Third Choice</option>
+					</select>
+			</div>
+
+
+			<label>Name</label>
+			<input type='text' name='fullname'>
+
+			<label>Email</label>
+			<input type='email' name='email'>
+
+			<label>Password</label>
+			<input type='password' name='pword'>
+
+
+			<button type='submit'>Submit this form</button>
+		</fieldset>
+	</form>
+
+</body>
+</html>
