@@ -1,0 +1,24 @@
+#contact-info {
+    font-size: .8em;
+}
+
+.job {
+    background-color: #e9e5dc;
+    border-radius: 5px;
+    padding: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.duty-list {
+    font-size: .8em;
+}
+
+
+li:nth-child(odd) {
+    background: red;
+}
+
+li:nth-child(even) {
+    background: blue;
+}
