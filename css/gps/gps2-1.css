@@ -1,0 +1,28 @@
+
+.header {
+  background: #abcdef;
+  
+
+ }
+
+.articleTitle{
+  margin:0;
+  padding: 10px;
+}
+
+body {
+  margin:0;
+  width: 100%;
+  background:#fedcba;
+}
+
+.column{
+  display: inline-block;
+  width: 50%;
+  background: #FF00FF;
+}
+.articleContent {
+  display: inline-block;
+  width: 100%;
+  background: #ababab;
+}
