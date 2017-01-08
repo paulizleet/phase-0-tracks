@@ -1,0 +1,18 @@
+Washing Dishes
+
+I.	Grab Sponge
+II. For every dirty dish in your sink:
+		1. if sponge needs soap:
+			put soap on sponge
+
+		2.  While dish is not clean:
+			i. scrub with sponge
+			ii. if sponge is too soft for certain gunk:
+					Use the scrub pad instead
+
+		3.	Place clean dish on dryer rack 
+
+III. For every clean dish in the dryer rack:
+		1.  While dish is not fully dry: 
+				i.	Gyrate towel over face of dish
+		2.  Put dish away in its cabinet
