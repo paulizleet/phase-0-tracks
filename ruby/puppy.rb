@@ -8,7 +8,7 @@ Puppy
 	Breed
 	Color
 	Sex
-	Gender
+
 
 	Methods:
 	Sleep
