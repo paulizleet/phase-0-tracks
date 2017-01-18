@@ -54,7 +54,7 @@ def merge_sort(arr)
 
 
 	#now merge the two
-	array_c = Array.new(array_a.length + array_b.length) #Initialize an array that big enough for all of the values
+	array_c = Array.new(array_a.length + array_b.length) #Initialize an array that's big enough for all of the values
 
 	idx = 0
 	while array_a.length > 0 and array_b.length > 0 #While both arrays are not of length 0
