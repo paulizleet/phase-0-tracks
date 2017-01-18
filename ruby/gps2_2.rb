@@ -28,21 +28,21 @@ end
 # 		add new key value pair
 # output: hash
 def add_item(grocery_list, item_name, qty = 1)
-
-	if grocery_list[item_name] == nil
-		grocery_list[item_name] = qty
-	else
-		puts "Item already in list"
-	end
-
+	grocery_list[item_name] = qty
 	return grocery_list
 end
+
+
 
 # Method to remove an item from the list
 # input: hash, item name
 # steps: hash.delete(item)
 # output: new hash
 
+def remove_item(grocery_list, item_name)
+	grocery_list.delete(item_name)
+	return grocery_list
+end 
 
 
 # Method to update the quantity of an item
@@ -50,13 +50,34 @@ end
 # steps: hash[item_name] = new quantity
 # output: updated hash
 
+def update_quantity(grocery_list, item_name, qty = 1)
+	grocery_list = add_item(grocery_list, item_name, qty)
+	return grocery_list
+end
+
+
 # Method to print a list and make it look pretty
 # input: hash
 # steps: iterate over hash |key, value| puts "#{key} - #{value}"
 # output: nil
 
+def print_list(grocery_list)
+	grocery_list.each do |grocery, qty|
+		puts "#{grocery}, qty: #{qty}"
+	end
+end
 
 #Driver code
 
-puts create_list("carrots apples cereal pizza carrots apples cereal pizza")
+grocery_list = create_list("carrots apples cereal pizza")
+grocery_list = add_item(grocery_list, "brocolli", 2)
+grocery_list = add_item(grocery_list, "celery", 3)
+grocery_list = add_item(grocery_list, "oranges", 4)
+grocery_list = remove_item(grocery_list, "carrots")
+grocery_list = remove_item(grocery_list, "oranges")
+print_list(grocery_list)
+
+
+
+
 
