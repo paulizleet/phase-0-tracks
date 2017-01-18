@@ -78,6 +78,30 @@ grocery_list = remove_item(grocery_list, "oranges")
 print_list(grocery_list)
 
 
+/
+What did you learn about pseudocode from working on this challenge?
+
+	That using structured pseudocode is a useful tool for quickly
+	understanding what a method is supposed to accomplish
+
+What are the tradeoffs of using arrays and hashes for this challenge?
+	Hashes make use of keys, and that makes finding certain entries simple because you can just ask for a key.
+	With arrays you need to iterate and check every one until you find it.
+
+What does a method return?
+	Whatever we tell it to!  
+	It returns the value that we want whoever called the method to carry on with.
+
+What kind of things can you pass into methods as arguments?
+	You can pass anything you like.
+	You can even make a method call itself while already calling itself.
+
+How can you pass information between methods?
+	1. Global Variables.  It's a bad idea but you can do it.
+	2. Calling more methods!
 
 
-
+What concepts were solidified in this challenge, and what concepts are still confusing?
+	I still don't really understand the point of hashes.  
+	I'm used to just piling arrays onto one another because it made sense to me.
+/
