@@ -84,7 +84,7 @@ class GuessingGame
 			p @correct_guesses
 
 			puts "\nGuess a letter"
-			#letter = gets.chomp
+			letter = gets.chomp
 			if self.guess(letter) == true
 				puts "You guessed that already!"
 				redo
@@ -104,15 +104,15 @@ end
 
 
 
-#puts "Player one - enter a word"
-#word = gets.chomp
+puts "Player one - enter a word"
+word = gets.chomp
 
-#game = GuessingGame.new(word)
+game = GuessingGame.new(word)
 
-#100.times do 
-#	puts "\n"
-#end
+100.times do 
+	puts "\n"
+end
 
-#puts "Player two - Guess the word!"
+puts "Player two - Guess the word!"
 
-#puts game.play((word.length * 0.6).ceil + 5)
+puts game.play((word.length * 0.6).ceil + 5)
