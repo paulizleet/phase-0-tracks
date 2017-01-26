@@ -101,3 +101,25 @@ STATE_DATA.each {
 
 #=======================================================================
 # Reflection Section
+
+
+
+#What are the differences between the two different hash syntaxes shown in the state_data file?
+#  The hash STATE_DATA pairs a string key to a value of another hash.  
+#  It lets you use different keys for hashes which use the same keys
+
+#What does require_relative do? How is it different from require?
+# =>  require_relative makes ruby include a script from a specified directory.  If no path is given, 
+# =>  it pulls from the current working directory.  Regular require makes ruby include modules from installed gems.
+
+
+#What are some ways to iterate through a hash?
+# => use an iterator method with a block
+# => while arbitrary_int < hash.length
+
+#When refactoring virus_effects, what stood out to you about the variables, if anything?
+# => I noticed that both methods were pulling the class' own attributes as arguments.  
+# => The methods have access to those attributes anyway, so pulling them is redundant.
+
+#What concept did you most solidify in this challenge?
+# => Hashes make more sense to me now.  I didn't think to use a hash key to identify another hash as a value. 
