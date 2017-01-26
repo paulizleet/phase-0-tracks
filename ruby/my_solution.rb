@@ -83,13 +83,6 @@ end
 # DRIVER CODE
 # initialize VirusPredictor for each state
 
-
-
-alaska = VirusPredictor.new("Alaska", STATE_DATA["Alaska"][:population_density], STATE_DATA["Alaska"][:population])
-alaska.virus_effects
-
-
-
 states = Array.new
 STATE_DATA.each {
   |state, pop|
