@@ -1,0 +1,41 @@
+
+2.
+
+
+SELECT *
+FROM reviews
+JOIN users ON reviews.user_id = users.id
+JOIN businesses ON reviews.business_id =  businesses.id;
+
+1|4|iu8hjokln,atez4gsrwiuko8jhgredfsruiejkh :DDDDD|2|1|1|Bradford|Pitt|2|Lotus Yoga
+2|5|Yum Yum ez food|1|3|3|Steven|Wonder|1|Grundy Hollow Wedding Chapel
+3|1|Nasty nasty|3|3|3|Steven|Wonder|3|Plumbing By Janet
+4|3|hello?|3|1|1|Bradford|Pitt|3|Plumbing By Janet
+
+
+
+3.
+
+
+SELECT users.first_name, users.last_name, businesses.name, reviews.stars, reviews.comment
+FROM reviews
+JOIN users ON reviews.user_id = users.id
+JOIN businesses ON reviews.business_id =  businesses.id;
+
+Bradford|Pitt|Lotus Yoga|4|iu8hjokln,atez4gsrwiuko8jhgredfsruiejkh :DDDDD
+Steven|Wonder|Grundy Hollow Wedding Chapel|5|Yum Yum ez food
+Steven|Wonder|Plumbing By Janet|1|Nasty nasty
+Bradford|Pitt|Plumbing By Janet|3|hello?
+
+
+4.
+
+SELECT users.first_name, users.last_name, businesses.name, reviews.stars, reviews.comment
+FROM reviews
+JOIN users ON reviews.user_id = users.id
+JOIN businesses ON reviews.business_id =  businesses.id
+WHERE businesses.name= "Plumbing By Janet";
+
+
+Steven|Wonder|Plumbing By Janet|1|Nasty nasty
+Bradford|Pitt|Plumbing By Janet|3|hello?
